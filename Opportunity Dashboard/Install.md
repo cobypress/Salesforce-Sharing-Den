@@ -1,6 +1,6 @@
 Opportunity Dashboard
 
-To install- go to this link- https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4K000001Pl15
+To install- go to this link- https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4K000001Pl1A
 
 Created a sexy Opportunity Dashboard in Salesforce using only standard fields/objects and 2 custom fields for the filtering of the dashboard. 
 
