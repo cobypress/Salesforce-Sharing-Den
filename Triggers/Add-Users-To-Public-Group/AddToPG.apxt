@@ -1,0 +1,15 @@
+trigger AddToPG on User (after insert) {
+    List<GroupMember> GMlist = new List<GroupMember>();
+    for(User U : Trigger.New) {
+        if(U.isActive && U.ProfileId == '00e4L000000gkNnQAI') {
+            GroupMember GM = new GroupMember();
+            GM.GroupId = '00G4L000000YikbUAC';
+            GM.UserOrGroupId = U.Id;
+            GMList.add(GM);        
+        }
+    }
+    if(!GMList.isEmpty()) {
+        System.debug('Group Member List is ' + GMList);
+        insert GMList;
+    }
+}
